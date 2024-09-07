@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mach Bazar | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo.png" width="325px"></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="image/cart.png" width="30px" height="30px">
+                <div class="menu-icon">
+                        <img src="image/menu.png" onclick="menutoggle()">
+
+                </div>
+            
+            </div>
+        </div>
+    
+
+
+    
+    </div>
+
+
+
+<!---single Product details-->
+    <div class="small-containers single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="image/telap-s.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <p>Home / Mach</p>
+                <h1>Telapia Fish </h1>
+                <h4>200 BDT/KG</h4>
+                <h4>Weight:10 pieces/kg</h4>
+                <input type="number" value="1">
+                <a href=""class="button">Add To Cart</a>
+                <h3>Product Details</h3>
+                <p>This Hilsa is widely found in Bangladesh from the Bay of Bengal to our rivers. They are the tastiest of all hilsas </p>
+            </div>
+        </div>
+       
+        <div class="row row-2">
+            <h1>Related Products</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="product-lobs.html"><img src="image/lobst-l.jpg" ></a>
+                <a href="product-lobs.html"><h4 class="t1">Big Lobstar</h4></a>
+                <h5 class="t1">weight:500 gm</h5>
+                <p class="t1">price:2000Tk per piecs</p>
+            </div>
+            <div class="col-4">
+                <a href="product-telapia.html"><img src="image/telap-s.jpg" ></a>
+                <a href="product-telapia.html"><h4 class="t1">Telapia Fish</h4></a>
+                <h5 class="t1">weight:10 pieces/kg</h5>
+                <p class="t1">price:200Tk per piecs</p>
+            </div>
+            <div class="col-4">
+                <a href="product.batab.html"><img src="image/bata.jpg" ></a>
+                <a href="product.batab.html"><h4 class="t1">Bata Fish</h4></a>
+                <h5 class="t1">weight:2 pices/per kg</h5>
+                <p class="t1">price:400Tk per kg</p>
+            </div>
+            <div class="col-4">
+                <a href="product-tigerp.html"><img src="image/tigerp.png" ></a>
+                <a href="product-tigerp.html"><h4 class="t1">Tiger Prawn Fish</h4></a>
+                <h5 class="t1">weight:10 pieces/kg</h5>
+                <p  class="t1">price:800Tk per piec</p>
+            </div>
+            <div class="col-4">
+                <a href="product-iliss.html"><img src="image/ilis-s.jpg" ></a>
+                <a href="product-iliss.html"><h4 class="t1">Hilsa Fish</h4></a>
+                <h5 class="t1">weight:500 gm</h5>
+                <p  class="t1">price:800Tk/kg</p>
+            </div>
+           
+        </div>
+
+        
+    </div>
+
+
+
+
+
+<!--------footer------------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download app for Android And ios Mobile Phone</p>
+                <div class="app-logo">
+                    <img src="image/play-store.svg" >
+                 </div>   
+            </div>
+            <div class="footer-col-2">
+                <img src="image/logo.png" >
+                
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!------js for toggle------->
+        <script>
+            var menuItems = document.getElementById("menuItems");
+
+            menuItems.style.maxHeight ="0px";
+
+            function menutoggle(){
+                    if(menuItems.style.maxHeight =="0px") 
+                    {
+                        menuItems.style.maxHeight ="200px";
+                    }  
+                    else
+                    {
+                        menuItems.style.maxHeight ="0px";
+                    }
+            }
+        </script>
+
+</body>
+</html>
